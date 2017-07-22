@@ -1,3 +1,8 @@
+// 1 byte    0000 to   007F
+// 2 bytes   0080 to   07FF
+// 3 bytes   0800 to   FFFF
+// 4 bytes  10000 to 10FFFF
+
 const OFFSET = 32
 const BASE = 65535 - OFFSET
 
