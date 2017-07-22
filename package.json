@@ -1,0 +1,30 @@
+{
+  "name": "base!",
+  "version": "1.0.0",
+  "description": "Base 65503 encoder & decoder for numbers",
+  "main": "index.js",
+  "repository": "https://github.com/wopian/base-.git",
+  "bugs": "https://github.com/wopian/base-/issues",
+  "homepage": "https://github.com/wopian/base-#readme",
+  "author": "wopian <wopian@wopian.me>",
+  "license": "MIT",
+  "keywords": [
+    "unicode",
+    "base",
+    "base-65503",
+    "base-ffe0",
+    "base-conversion",
+    "encoder",
+    "decoder",
+    "number"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
+}
