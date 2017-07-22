@@ -1,6 +1,6 @@
 {
   "name": "base-65503",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Base 65503 encoder & decoder for numbers",
   "main": "index.js",
   "repository": "https://github.com/wopian/base-65503.git",
