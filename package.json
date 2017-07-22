@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Base 65503 encoder & decoder for numbers",
   "main": "index.js",
-  "repository": "https://github.com/wopian/base-.git",
-  "bugs": "https://github.com/wopian/base-/issues",
-  "homepage": "https://github.com/wopian/base-#readme",
+  "repository": "https://github.com/wopian/base-65503.git",
+  "bugs": "https://github.com/wopian/base-65503/issues",
+  "homepage": "https://github.com/wopian/base-65503#readme",
   "author": "wopian <wopian@wopian.me>",
   "license": "MIT",
   "keywords": [
