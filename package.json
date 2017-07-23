@@ -2,7 +2,7 @@
   "name": "base-65503",
   "version": "1.0.2",
   "description": "Base 65503 encoder & decoder for numbers",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/wopian/base-65503.git",
   "bugs": "https://github.com/wopian/base-65503/issues",
   "homepage": "https://github.com/wopian/base-65503#readme",
@@ -19,12 +19,18 @@
     "number"
   ],
   "files": [
-    "index.js"
+    "lib"
   ],
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "build": "rollup -c --environment BUILD:production"
   },
   "devDependencies": {
-    "jest": "^20.0.4"
+    "eslint": "^4.3.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "jest": "^20.0.4",
+    "rollup": "^0.45.2",
+    "rollup-plugin-cleanup": "^1.0.1",
+    "standard": "^10.0.2"
   }
 }

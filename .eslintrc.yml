@@ -1,0 +1,10 @@
+root: true
+extends: standard
+parserOptions:
+  ecmaVersion: 2017
+  ecmaFeatures:
+    modules: true
+plugins:
+- jest
+env:
+  jest/globals: true
