@@ -6,32 +6,32 @@
 const OFFSET = 32
 const BASE = 65535 - OFFSET
 
-let alpha = []
+let alphabet = []
 
 for (let i = 0; i < BASE; i++) {
-  alpha.push(String.fromCharCode(i + OFFSET))
+  alphabet.push(String.fromCharCode(i + OFFSET))
 }
 
 const encode = exports.encode = num => {
   if (!/^\d+$/.test(num)) throw new Error('Value passed is not an int')
   if (typeof num !== 'number') num = ~num
 
-  const base = alpha.length
+  const base = alphabet.length
   let str = ''
 
   while (num >= base) {
     const mod = num % base
-    str = alpha[mod] + str
+    str = alphabet[mod] + str
     num = (num - mod) / base
   }
 
-  return alpha[num] + str
+  return alphabet[num] + str
 }
 
 const decode = exports.decode = str => {
   let num = 0
 
-  while(str) {
+  while (str) {
     let pos = str[0].charCodeAt(0) - OFFSET
     if (pos < 0) throw new Error(`Can't find ${str[0]}`)
     let powerOf = str.length - 1
