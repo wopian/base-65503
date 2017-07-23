@@ -1,6 +1,6 @@
 {
   "name": "base-65503",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Base 65503 encoder & decoder for numbers",
   "main": "lib/index.js",
   "module": "lib/index.mjs",
