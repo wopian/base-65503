@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "Base 65503 encoder & decoder for numbers",
   "main": "lib/index.js",
+  "module": "lib/index.mjs",
   "repository": "https://github.com/wopian/base-65503.git",
   "bugs": "https://github.com/wopian/base-65503/issues",
   "homepage": "https://github.com/wopian/base-65503#readme",
@@ -23,13 +24,19 @@
   ],
   "scripts": {
     "test": "jest --coverage",
-    "build": "rollup -c --environment BUILD:production"
+    "build": "cross-env NODE_ENV=production rollup -c --environment BUILD:production"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "cross-env": "^5.0.1",
     "eslint": "^4.3.0",
     "eslint-plugin-jest": "^20.0.3",
     "jest": "^20.0.4",
     "rollup": "^0.45.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-babili": "^3.1.0",
     "rollup-plugin-cleanup": "^1.0.1",
     "standard": "^10.0.2"
   }

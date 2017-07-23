@@ -12,7 +12,7 @@ for (let i = 0; i < BASE; i++) {
   alphabet.push(String.fromCharCode(i + OFFSET))
 }
 
-const encode = exports.encode = num => {
+export const encode = num => {
   if (!/^\d+$/.test(num)) throw new Error('Value passed is not an int')
   if (typeof num !== 'number') num = ~num
 
@@ -28,7 +28,7 @@ const encode = exports.encode = num => {
   return alphabet[num] + str
 }
 
-const decode = exports.decode = str => {
+export const decode = str => {
   let num = 0
 
   while (str) {
@@ -41,17 +41,3 @@ const decode = exports.decode = str => {
 
   return num
 }
-
-/* TEST
-for (let i = 0; i < BASE ^ BASE; i += 1) {
-  const num = encode(out, out.length)(i)
-  console.log(i, num, decode(num))
-  if (i !== decode(encode(out, out.length)(i))) console.log('FAIL')
-  // process.stdout.write('\033c')
-}
-
-const number = 1500682695596
-console.log(number)
-console.log(encode(number))
-console.log(decode(encode(number)))
-*/
